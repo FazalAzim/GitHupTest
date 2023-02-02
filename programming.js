@@ -347,39 +347,39 @@
 
 // ****************************************************************
 
-function Calculator() {
-  this.read = function () {
-    this.num1 = +prompt('Enter number 1:', 2);
-    this.num2 = +prompt('Enter number 2:', 3);
-  };
+// function Calculator() {
+//   this.read = function () {
+//     this.num1 = +prompt('Enter number 1:', 2);
+//     this.num2 = +prompt('Enter number 2:', 3);
+//   };
 
-  this.sum = function () {
-    return this.num1 + this.num2;
-  };
+//   this.sum = function () {
+//     return this.num1 + this.num2;
+//   };
 
-  this.product = function () {
-    return this.num1 * this.num2;
-  };
-}
+//   this.product = function () {
+//     return this.num1 * this.num2;
+//   };
+// }
 
-let result = new Calculator();
-result.read();
-console.log(result.sum());
-console.log(result.product());
+// let result = new Calculator();
+// result.read();
+// console.log(result.sum());
+// console.log(result.product());
 
 // ****************************************************************
 
-// function Accumulator(initialValue) {
-//   this.value = initialValue;
-//   this.user = function () {
-//     this.value += +prompt('enter any value');
-//   };
-//   this.sum = function () {
-//     return this.value;
-//   };
-// }
-// let result = new Accumulator(10);
-// result.user();
-// console.log(result.sum());
+function Accumulator(initialValue) {
+  this.value = initialValue;
+  this.user = function () {
+    this.value += +prompt('enter any value');
+  };
+  this.sum = function () {
+    return this.value;
+  };
+}
+let result = new Accumulator(10);
+result.user();
+console.log(result.sum());
 
 // ***************************************************************
