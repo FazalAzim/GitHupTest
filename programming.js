@@ -380,6 +380,8 @@ function Accumulator(initialValue) {
 }
 let result = new Accumulator(10);
 result.user();
+result.user();
+result.user();
 console.log(result.sum());
 
 // ***************************************************************
