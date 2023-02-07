@@ -405,3 +405,30 @@
 //   }, 1000);
 // });
 // console.log(promise);
+
+// ****************************************************************
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Welcome');
+//   }, 1000);
+// });
+// console.log(promise);
+
+// ****************************************************************
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Welcome');
+//   }, 1000);
+// });
+// console.log(promise);
+
+// ****************************************************************
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Welcome');
+//   }, 1000);
+// });
+// console.log(promise);
+
+// ****************************************************************
