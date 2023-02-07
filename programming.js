@@ -369,19 +369,39 @@
 
 // ****************************************************************
 
-function Accumulator(initialValue) {
-  this.value = initialValue;
-  this.user = function () {
-    this.value += +prompt('enter any value');
-  };
-  this.sum = function () {
-    return this.value;
-  };
-}
-let result = new Accumulator(10);
-result.user();
-result.user();
-result.user();
-console.log(result.sum());
+// function Accumulator(initialValue) {
+//   this.value = initialValue;
+//   this.user = function () {
+//     this.value += +prompt('enter any value');
+//   };
+//   this.sum = function () {
+//     return this.value;
+//   };
+// }
+// let result = new Accumulator(10);
+// result.user();
+// result.user();
+// result.user();
+// console.log(result.sum());
 
 // ***************************************************************
+// let greater = (array) => {
+//   for (let i = 0; i < array.length - 1; i++) {
+//     let max = array[i];
+//     if (max < array[i + 1]) {
+//       max = array[i + 1];
+//     }
+//   }
+//   console.log(max);
+// };
+
+// const array = [3, 1, 2, 5, 4];
+// greater(array);
+
+// ****************************************************************
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Welcome');
+//   }, 1000);
+// });
+// console.log(promise);
