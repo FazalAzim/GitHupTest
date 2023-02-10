@@ -407,3 +407,35 @@
 // console.log(promise);
 
 // ****************************************************************
+
+// const str = 'jOhndOE';
+// const vowel = 'aeiou';
+// let count = 0;
+// for (let i = 0; i < str.length; i++) {
+//   for (let j = 0; j < vowel.length; j++) {
+//     if (str.at(i).toLowerCase() === vowel.at(j)) {
+//       count = count + 1;
+//       console.log(str.at(i));
+//     }
+//   }
+// }
+// console.log(count, 'vowel');
+
+// ***************************************************************
+
+// const character = (str) => {
+//   let array = [];
+//   for (let i = 0; i < str.length; i++) {
+//     let find = array.join('').toLowerCase().includes(str.at(i).toLowerCase());
+//     if (!find) {
+//       array.push(str.at(i));
+//     }
+//   }
+//   return array.join('');
+// };
+// let str = prompt('Enter any string', 'JohnDoe');
+// let result = character(str);
+// console.log('The longest string is : ' + result);
+// console.log('The length of string is : ' + result.length);
+
+// ****************************************************************
