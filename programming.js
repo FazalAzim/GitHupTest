@@ -423,19 +423,21 @@
 
 // ***************************************************************
 
-// const character = (str) => {
-//   let array = [];
-//   for (let i = 0; i < str.length; i++) {
-//     let find = array.join('').toLowerCase().includes(str.at(i).toLowerCase());
-//     if (!find) {
-//       array.push(str.at(i));
-//     }
-//   }
-//   return array.join('');
-// };
-// let str = prompt('Enter any string', 'JohnDoe');
-// let result = character(str);
-// console.log('The longest string is : ' + result);
-// console.log('The length of string is : ' + result.length);
+const nonRepeated = (str) => {
+  let array = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str.at(i) !== ' ') {
+      let find = array.join('').toLowerCase().includes(str.at(i).toLowerCase());
+      if (!find) {
+        array.push(str.at(i));
+      }
+    }
+  }
+  return array.join('');
+};
+let str = prompt('Enter any string', 'JohnDoe');
+let result = nonRepeated(str);
+console.log('The longest string is : ' + result);
+console.log('The length of string is : ' + result.length);
 
 // ****************************************************************
