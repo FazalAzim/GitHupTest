@@ -423,21 +423,30 @@
 
 // ***************************************************************
 
-const nonRepeated = (str) => {
-  let array = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str.at(i) !== ' ') {
-      let find = array.join('').toLowerCase().includes(str.at(i).toLowerCase());
-      if (!find) {
-        array.push(str.at(i));
-      }
-    }
-  }
-  return array.join('');
-};
-let str = prompt('Enter any string', 'JohnDoe');
-let result = nonRepeated(str);
-console.log('The longest string is : ' + result);
-console.log('The length of string is : ' + result.length);
+// const nonRepeated = (str) => {
+//   let array = [];
+//   for (let i = 0; i < str.length; i++) {
+//     let flag = false;
+//     if (str.at(i) !== ' ') {
+//       for (let j = 0; j < array.length; j++) {
+//         if (str.at(i).toLowerCase() === array[j].toLowerCase()) {
+//           flag = true;
+//         }
+//       }
+//       if (!flag) {
+//         array.push(str.at(i));
+//       }
+//       // let find = array.join('').toLowerCase().includes(str.at(i).toLowerCase());
+//       // if (!find) {
+//       //   array.push(str.at(i));
+//     }
+//   }
+
+//   return array.join('');
+// };
+// let str = prompt('Enter any string', 'JohnDoe');
+// let result = nonRepeated(str);
+// console.log('The longest string is : ' + result);
+// console.log('The length of string is : ' + result.length);
 
 // ****************************************************************
