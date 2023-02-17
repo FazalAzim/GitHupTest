@@ -450,3 +450,24 @@
 // console.log('The length of string is : ' + result.length);
 
 // ****************************************************************
+
+// const palindrome = (string) => {
+//   let flag = true;
+
+//   for (let i = 0, j = string.length - 1; i <= string.length / 2, j >= string.length / 2 - 1; i++, j--) {
+//     if (string.at(i) !== string.at(j)) {
+//       flag = false;
+//       break;
+//     }
+//   }
+//   if (!flag) {
+//     console.log('Not');
+//   } else {
+//     console.log('Yes');
+//   }
+// };
+
+// const string = 'madam';
+// palindrome(string);
+
+// ****************************************************************
