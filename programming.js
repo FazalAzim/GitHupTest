@@ -471,3 +471,52 @@
 // palindrome(string);
 
 // ****************************************************************
+
+// const operators = ['+', '-', '*', '/'];
+
+// const randomNumber = () => {
+//   return Math.floor(Math.random() * 9);
+// };
+
+// const randomOperator = () => {
+//   return operators[Math.floor(Math.random() * 4)];
+// };
+
+// const arrayNumber = () => {
+//   let array = [];
+//   for (let i = 0; i < 4; i++) {
+//     array.push(randomNumber());
+//   }
+//   return array;
+// };
+
+// const arrayOperator = () => {
+//   let array = [];
+//   for (let i = 0; i < 3; i++) {
+//     array.push(randomOperator());
+//   }
+//   return array;
+// };
+
+// const randomSolution = () => {
+//   const numbers = arrayNumber();
+//   const operators = arrayOperator();
+//   console.log(numbers, '...Numbers');
+//   console.log(operators, ' ...Operators');
+
+//   let result = '';
+//   for (let i = 0; i <= 2; i++) {
+//     if (i < 2) {
+//       result += numbers[i] + operators[i];
+//       console.log(result)
+//     } else {
+//       result += numbers[i] + operators[i] + numbers[i + 1];
+//       console.log(result);
+//     }
+//   }
+//   let evaluated = eval(result);
+//   console.log(evaluated);
+// };
+// randomSolution();
+
+// *****************************************************************
